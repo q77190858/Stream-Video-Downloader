@@ -1,0 +1,7 @@
+{
+  "program": {
+    "x86-32": { "url": "_platform_specific/x86-32/ffmpeg-x86-32.nexe" },
+    "x86-64": { "url": "_platform_specific/x86-64/ffmpeg-x86-64.nexe" },
+    "arm": { "url": "_platform_specific/arm/ffmpeg-arm.nexe" }
+  }
+}

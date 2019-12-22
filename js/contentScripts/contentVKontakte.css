@@ -1,0 +1,13 @@
+.fvdDownloader_page_button {
+}
+.fvdDownloader_page_button  {
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 50px;
+}
+.fvdDownloader_page_button .fvdDownloader_page_button_logo {
+	width: 16px;
+	height: 16px;
+	margin-top: 8px;
+}	

@@ -1,0 +1,116 @@
+#fvdDownloader_page_button {
+    disp1lay: inline-block;
+}
+#fvdDownloader_page_button.container {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#fvdDownloader_page_button.yt-default {
+	font-family: "YouTube Noto",Roboto,arial,sans-serif;
+    outline: 0;
+    font-weight: 500;
+    font-size: 11px;
+    text-decoration: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    line-height: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    color: #333;
+    background: none;
+}
+#fvdDownloader_page_button .yt-uix-button {
+	margin-left: 20px; 
+	border: solid;	
+	border-right-width: 1px;	
+	border-left-width: 1px;	
+	border-top-width: 1px;	
+	border-bottom-width: 1px;  
+	border-color: #999;
+	cursor: pointer;
+}	
+
+			
+#fvdDownloader_page_button .yt-uix-button-logo {
+}
+#fvdDownloader_page_button .yt-uix-button-logo img {
+	margin-top: 4px;	
+}
+#fvdDownloader_page_button .yt-uix-button-title {
+	padding-left:5px;
+	line-height:23px; 
+	padding-right:10px; 
+	border: solid; 
+	border-right-width:1px; 
+	border-left-width:0px; 
+	border-top-width:0px; 
+	border-bottom-width:0px;
+}
+#fvdDownloader_page_button .yt-uix-button-arrow {
+	margin-left:5px;
+}
+#fvdDownloader_page_button .yt-uix-button-arrow img {
+	vertical-align: text-bottom;
+}
+/* ----------------------- */
+#fvdDownloader_page_dropdown {
+    disp1lay: block;
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;    
+}
+#fvdDownloader_page_dropdown.container-menu {
+	font-family: "YouTube Noto",Roboto,arial,sans-serif;
+    outline: 0;
+    font-weight: 500;
+    font-size: 11px;
+    text-decoration: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    line-height: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    color: #333;
+    background: none;
+    border: 1px solid #ccc;
+	display:none
+}
+#fvdDownloader_page_dropdown.activate {
+	display:block;
+	opacity: 0;
+}
+#fvdDownloader_page_dropdown .yt-uix-button-menu {
+	min-width: 200px;
+	min-height: 100px;
+	background: white;
+	width: auto;
+    height: auto;	
+    display: block;
+    padding: 10px;
+}
+#fvdDownloader_page_dropdown .yt-uix-button-menu li {
+	list-style-type: none;
+}	
+#fvdDownloader_page_dropdown .yt-uix-button-menu .yt-uix-button-menu-item {
+	display: block;
+	padding: 6px 60px 6px 10px!important;
+	height: 16px;
+	font-size: 13px;
+	white-space: nowrap;
+	color: #202020;
+}
+#fvdDownloader_page_dropdown .yt-uix-button-menu .yt-uix-button-menu-item:hover {
+	background-color: #0079b8;
+	color: white;
+}
+#fvdDownloader_page_dropdown .yt-uix-button-menu .yt-uix-button-menu-item-img {
+	margin-left:-6px;
+	margin-right: 1px;
+	margin-top:3px	
+}
+#fvdDownloader_page_dropdown .yt-uix-button-menu .yt-uix-button-menu-item-label {
+	margin-left: 10px;
+}

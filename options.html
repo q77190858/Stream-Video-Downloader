@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/options.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/options.css" />
+		
+		<title>Stream Video Downloader settings</title>
+	</head>
+	<body>
+	
+	<div id="mainContainer" class="install">
+	
+			<div class="head">
+				<div class="text"></div>
+			</div>
+
+			<div class="body">
+				
+				<div class="description1">
+					<div class="group">
+						<fieldset>
+							<legend msg="options_show_formats">Show formats</legend>
+								<div class="col1">
+									<label><input type="checkbox" sname="enable_type_mp4"   id="enable_mp4"  /><span>.mp4  (mpeg)</span></label><br/>
+									<label><input type="checkbox" sname="enable_type_3gp"   id="enable_3gp"  /><span>.3gp  (3gpp)</span></label><br/>
+									<label><input type="checkbox" sname="enable_type_flv"   id="enable_flv"  /><span>.flv  (flv)</span></label><br/>
+									<label><input type="checkbox" sname="enable_type_mov"   id="enable_mov"  /><span>.mov  (quicktime)</span></label><br/>
+									<label><input type="checkbox" sname="enable_type_avi"   id="enable_avi"  /><span>.avi  (msvideo)</span></label><br/>
+								</div>
+								<div class="col2">
+									<label><input type="checkbox" sname="enable_type_wmv"   id="enable_wmv"  /><span>.wmv  (ms-wmv)</span></label><br/>
+									<label><input type="checkbox" sname="enable_type_asf"   id="enable_asf"  /><span>.asf  (ms-asf)</span></label><br/>
+									<label><input type="checkbox" sname="enable_type_swf"   id="enable_swf"  /><span>.swf  (flash)</span></label><br/>
+									<label><input type="checkbox" sname="enable_type_webm"  id="enable_webm" /><span>.webm (web)</span></label><br/>
+								</div>
+						</fieldset>					
+					</div>
+				</div>
+
+				<div class="description2">
+					<div class="group">
+						<fieldset>
+							<legend msg="options_trigger_video">Trigger if video more than</legend>
+								<label><input type="radio" name="trigger_video_more" sname="trigger_video_more"  value="video_100kb"/><span>100kb</span></label><br>
+								<label><input type="radio" name="trigger_video_more" sname="trigger_video_more"  value="video_1mb"/><span>1mb</span></label><br>
+						</fieldset>					
+					</div>
+				</div>
+				
+				<div class="description3">
+					<div class="group">
+						<fieldset>
+							<label>
+								<input type="checkbox" sname="display_vk_button"  id="display_vk_button" />
+								<span msg="options_vk">Display vk.com download button</span>
+							</label><br/>
+							<label>
+								<input type="checkbox" sname="display_facebook_button"  id="display_facebook_button" />
+								<span msg="options_facebook">Display facebook.com download button</span>
+							</label><br/>
+							<label>
+								<input type="checkbox" sname="original_filename"  id="original_filename_button" />
+								<span msg="options_filename">Download original FileName</span>
+							</label><br/>
+						</fieldset>					
+					</div>
+				</div>
+				
+				<div id="applyButton">
+					<div class="fvdButton main withLoading" loading="0" id="applyChangesButton"><span class="text">Apply Changes</span><div class="image"></div></div>
+				</div>
+		
+				<div id="closeButton">
+					<div class="fvdButton" id="buttonCloseButton"><span class="text">Close</span></div>
+				</div>
+				
+				<div class="spacer"></div>
+				
+			</div>
+
+	</div>		
+	
+	
+	</body>
+</html>

@@ -1,0 +1,1537 @@
+body
+{
+	width: 550px;
+	height: 560px;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+a{
+	outline: none;
+}
+
+div#search_block
+{
+	width: 94%;
+	position: absolute;
+}
+
+input#search_box
+{
+	width: 70%;
+	display: block;
+	float: left;
+}
+
+input#search_button
+{
+	width: 28%;
+	display: block;
+	float: right;
+}
+
+/* fvdmedia */
+.fvdmedia-container {
+	clear: both;
+	background-color:Window;
+}
+
+.fd
+{
+	position: absolute;
+	z-index:1000;
+	top:100px;
+	left:0px;
+	border:1px solid WindowFrame;
+	background-color:Window;
+	padding-bottom:1px;
+	overflow: hidden;
+}
+
+.gffg
+{
+	float: left;
+	clear: both;
+	font-size: 13px;
+	font-family: arial;
+	width: 100%;
+	cursor: default;
+	padding-top: 1px;
+	padding-left: 2px;
+	color: WindowText;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-moz-user-select : none;
+}
+
+.gffg.selected
+{
+	background-color: Highlight;
+	color: HighlightText;
+}
+
+div.line{
+  height: 1px;
+  max-width: 490px;
+  background-color: #00aeef;
+  margin: 5px 0 1px 30px;
+}
+
+div#download_block
+{
+	clear: both;
+	height: 520px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+div#single_download_block input[type="button"]
+{
+	margin-top: 16px;
+	display: block;
+	padding: 6px 8px;
+	width: 300px;
+}
+
+div#root_download_block h2, div#empty_download_block h2, div#multiple_download_block h2, div#search_download_block h2
+{
+	font-family: arial, sans-serif;
+	text-align: left;
+	color: black;
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+div#help_padding_block
+{
+	height: 30px;
+	width: 100%;
+}
+
+div#help_block
+{
+	position: fixed;
+	bottom: 0px;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	left: 0px;
+	right: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#help_block .helpLink
+{
+	margin-right: 2px;
+}
+
+div#help_block .helpLink > a
+{
+	display: block;
+	float: left;
+	margin-right: 4px;
+	padding: 8px 4px 6px 26px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;	
+}
+
+div#help_block .helpLink > a:hover{
+	background-color: #ddd;
+	
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;	
+	
+	color: #222;
+}
+
+a#help_link_feedback
+{
+	width: 24px;	
+	background-image: url('/images/help_icon.svg');
+	background-size: 24px 24px;
+	margin-right: 5px;
+	cursor:pointer;
+}
+
+a#help_link_help
+{
+	background-image: url('/images/stream.bottom_help.png');
+}
+a#help_link_options
+{
+	background-image: url('/images/stream.options.png');
+	cursor:pointer;
+}
+
+a#help_link_clear
+{
+	background-image: url('/images/stream.clear.png');
+	cursor:pointer;
+}
+a#help_link_rate
+{
+	background-image: url('/images/stream.rate.png');
+	cursor:pointer;
+}
+
+a#help_link_converter
+{
+	background-image: url('/images/stream.bottom_converter.png');
+}
+a#help_link_note_taking
+{
+	background-image: url('/images/stream.bottom_note_taking.png');
+}
+
+a#help_link_donate{
+	background-image: url('/images/donate.png');
+}
+
+a#help_link_speeddial{
+	background-image: url('/images/fvdsd_22x22.png');
+	cursor:pointer;
+}
+
+a#help_link_wallpapers{
+	background-image: url('/images/wallpapers_icon.png');
+	cursor:pointer;
+}
+a#help_link_capture{
+	background-image: url('/images/logo_capture.png');
+	cursor:pointer;
+}
+
+a#help_link_better{
+	background-image: url('/images/better.png');
+}
+
+a#help_link_convert_video{
+	background-image: url('/images/convert_video.png');
+}
+
+a#help_link_write_review{
+	cursor: pointer;
+}
+
+div#help_link_rate_review{
+	position: absolute;
+	left: 50px;
+	top: -40px;
+	width: 150px;
+	height: 50px;
+	z-index:100;
+	border: 1px solid #555;
+	background-color: #f0f0f0;
+	cursor: default;
+}
+
+div#help_link_rate_review .help_link_rate_title{
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+div#help_link_rate_review .help_link_rate_button{
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 24px;
+	cursor: pointer;
+}
+
+
+
+a#help_link_player_video{
+	background-image: url('/images/convert_video.png');
+}
+
+a#help_link_errors{
+	background-image: url('/images/stream.bottom_feedback.png');
+}
+
+
+a#help_link_android{
+	background-image: url('/images/android.png');
+	cursor: pointer;
+}
+
+#help_block a{
+	text-decoration: none;
+	color: #464646;
+	-webkit-transition: 200ms;
+}
+
+/* donate block */
+
+#donate_block{
+	width: 500px;
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+#donateButtonContainer{
+	position: relative;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#donateButtonContainer a#returnToThreads{
+	left: 360px;
+	top: 30px;
+	position: absolute;
+}
+
+/* slow download hint */
+
+.topHint{
+	padding: 2px 10px 10px 10px;
+	position: relative;
+	font-size: 13px;
+	font-weight: bold;
+}
+.topHint:hover{
+}
+.topHint .text{
+	text-decoration: none;
+	color: black;
+}
+.topHint .text .title {
+	margin: 5px 0 0 30px;
+	
+}	
+.topHint .text .icons {
+	float: left;
+    width: 24px;
+    height: 24px;	
+	background-image: url('/images/stream.converter.png');
+}
+
+#captureDownloadHint{	
+	padding: 0px;
+	position: relative;
+}
+
+#captureDownloadHint:hover{
+
+}
+
+
+#captureDownloadHint .close{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	cursor: pointer;
+}
+
+#captureDownloadHint .text{
+	background: url(/images/capture.png) 6px center no-repeat;		
+	
+	font-size: 13px;
+	padding-right: 0px;	
+	margin-left: 0px;	
+	-webkit-transition-duration: 200ms;
+	
+	padding: 10px;
+	padding-left: 34px;
+	
+	display: inline-block;
+	
+	text-decoration: none;
+	color: #000;
+}
+/* 
+#captureDownloadHint:hover .text{
+	margin-left: 39px;
+}
+ */
+#captureDownloadHint .download{
+	position: absolute;
+	
+	right: 2px;
+	top: 2px;
+	
+	width: 32px;
+	height: 32px;
+	background: url( /images/download.png );
+	display: block;
+}
+
+
+.bgLine {
+	height: 12px;
+	background: url( /images/stream.bg.png );
+}
+
+
+.topHint:hover .close{
+	display: block;
+}
+
+/* Update chrome notice */
+
+#updateChromeNotice{
+	text-align: center;
+	padding: 20px;
+	
+	color: red;
+}
+
+/* help icon */
+
+.iconHelp{
+	background: url( /images/help.png );
+	width: 16px;
+	height: 16px;
+	
+	cursor: pointer;
+	display: inline-block;
+}
+
+/* iconButton */
+.multiple_download_container{
+	position: relative;
+	height: 36px;
+	width: 100%;
+	margin-top: 5px;
+}
+.multiple_download_header{
+	position: relative;
+	height: 36px;
+	width: 100%;
+}
+
+.multiple_download_container .iconDiv{
+	width: 250px;
+	height: 24px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+}
+
+.multiple_download_container  .iconDiv .iconButton{
+	width: 32px;
+	height: 24px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	float: right;
+	top: 0px;
+}
+.multiple_download_container  .iconDiv .iconButtonOptions{
+	width: 32px;
+	height: 24px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	float: right;
+	top: 0px;
+}
+
+.multiple_download_container  .iconDiv .iconButtonClear{
+	width: 32px;
+	height: 24px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	float: right;
+	top: 0px;
+}
+.multiple_download_container  .iconDiv .iconButtonRate{
+	width: 64px;
+	height: 24px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	float: right;
+	top: 0px;
+	margin-right: 5px;
+}
+.multiple_download_container .iconDiv .please-rate{
+	font-size: 13px;
+	float: left;
+	margin-top: 5px;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.helpIcon2{
+	background: url( /images/help2.png );
+	width: 24px;
+	height: 24px;
+	
+	display: inline-block;
+}
+
+div#help_block .helpLink .rate_text
+{
+	display: block;
+	float: left;
+	margin-left: -15px;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;	
+}
+
+div#help_block .helpLink .rate_star{
+	margin-right:-2px;
+	margin-top:-1px;
+	display: inline-block;
+}
+
+/* GTA Suggestion */
+
+#FvdSuggestionMessage{
+	padding: 3px;
+	border: 2px solid transparent;
+	position: relative;
+	font-size: 13px;
+	height: 24px;
+}
+
+#FvdSuggestionMessage:hover{
+	border-color: #555;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+#FvdSuggestionMessage .text{
+	padding-right: 10px;
+	float:left;
+	margin-left: 5px;
+	margin-top:3px;
+	font-weight: bold;
+}
+#FvdSuggestionMessage .rate_star{
+	margin-right:-2px;
+	margin-top:3px;
+	display: inline-block;
+}
+
+#FvdSuggestionMessage .button {
+	display: inline-block;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 10px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(90deg, #4da5d8, #58d2fd);
+	position: relative;
+	margin-left: 5px;
+	width: 90px;
+	float: right;
+}
+#FvdSuggestionMessage .button .text {
+	padding-right: 5px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top:0px;
+}
+
+#sovet_block {
+	position: relative;
+	margin-top: 100px;
+	width:550px;
+}
+#sovet_block .sovet_smart_pause {
+	text-decoration: none;
+}
+.sovet_block_icons {
+	width:250px;
+	margin: 0 auto;
+}
+.banner_smart_pause {
+	width: 250px;
+	cursor: pointer;
+}
+.sovet_block_text {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+.sovet_block_text  .text {
+	margin-top: 20px;
+	width: 400px;
+	font-weight: bold;
+	font-size: 11pt;
+	line-height: 1.3;	
+	text-decoration: none;
+	cursor: pointer;
+}
+#sovet_block .close{	
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	display:none;
+	color: #fff;
+	border: 2px solid #555;
+	background-color: #555;
+	border-radius: 5px;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+}
+#sovet_block:hover .close{	
+	display: block;
+}
+
+
+div#combineNotice {
+	position: absolute;
+	left: 10px;
+    bottom: 100px;
+	text-align: center;
+	width: 520px;
+}	
+
+/* ---------------------------------  item  --------------------------------- */
+div#download_container_wrapped {
+	height: 420px;
+	width: 550px;
+	position: relative;
+}	
+div#download_item_container {
+}
+
+div#download_item_template {
+	display: none;
+}
+div#download_item_template, div#download_template_group, div#download_template_group_item  {
+  display: none;
+}
+
+div.download_item {
+  display: table; 
+  clear: both;  
+  padding: 3px;
+  cursor: default;
+  width: 540px;
+  height: 46px;
+}
+
+div.download_item .thumbnailContent {
+  position:relative;
+  width: 75px;
+  display: table-cell;
+}
+div.download_item .thumbnailContent .thumbnail_wrapped {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 48px;
+}
+div.download_item .thumbnailContent .thumbnail {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 72px;
+  height: 48px;
+  overflow: hidden;
+}
+div.download_item .thumbnailContent .thumbnail img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+div.download_item .thumbnailContent .thumbnail-active:hover {
+/*  width: 288px;
+  height: auto;*/
+  overflow: visible;
+  background: white;
+  z-index: 10;
+}
+
+div.download_item .leftContent{
+  position:relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 330px;
+  height: 40px;
+}
+
+div.download_item .leftContent > div{
+  display: table-cell;
+  vertical-align: middle;
+}
+div.download_item:hover {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+div.download_item a {
+  color: #000;
+  text-decoration: none;
+}
+
+div.download_item .rightContent{
+  white-space: nowrap;
+  position: relative;
+}
+
+div.download_item .rightContent .download_byte{
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  background: #efefef;
+  padding: 3px 7px 3px 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90px;
+  height: 24px;
+  z-index: 5;
+  white-space: nowrap;
+  color: black;
+  text-align: center;
+  display: none;
+}
+div.download_item[media-type="stream"] .rightContent:hover .activate{
+  display: block;
+}
+
+div.download_item .download_button {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;  
+  position: relative;
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 90px;
+  height: 44px;
+  text-align:center;
+  border-radius: 5px;
+  background-image:-moz-linear-gradient(#427fed, #4da5d8);
+  background-image:-webkit-linear-gradient(#427fed, #4da5d8);
+  background-image:linear-gradient(#427fed, #4da5d8);
+}
+div.download_item:hover .download_button {
+}
+div.download_item .download_button.disabled {
+  opacity: 0.5;
+}  
+div.download_item .download_button_icon {
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background: url(/images/icons/stream-white-16x16.png) no-repeat;
+  background-position: center center;
+}  
+div.download_item .download_button_text {
+  display: table;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+div.download_item .download_button_text .download_button_wrapped {
+  display: table-cell;
+  width: 100%;
+  height: auto;
+  position: relative;
+  vertical-align: middle;
+}
+div.download_item .download_button_wrapped .text {
+  font-size: 11px;
+  font-weight: bold;
+  width:100%;
+  height: 14px;
+  text-align: center;
+}  
+div.download_item .size{
+  font-size: 10px;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+div.download_item .procent{
+  text-align: center;
+  font-size: 10px;
+  min-width: 30px;
+}
+
+div.download_item .download_button .loading{
+  display: none;
+  width: 100%;
+  background: url(/images/popup/loading_16x16.gif) no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+
+div.download_item .download_button[loading="1"] .loading{
+  display: block;
+}
+
+div.download_item .download_button[loading="1"] .text{
+  visibility: hidden;
+}
+
+div.download_item .download_button[loading="1"]  .size{
+  display: none;  
+}
+div.download_item .download_button:hover{
+  -webkit-box-shadow: 0px 0px 5px 0px #000;
+}
+div.download_item .download_button_menu {
+  display: none;
+  position: absolute;
+  top: 3px;
+  right: 88px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  z-index: 11;
+}
+div.download_item .download_button_menu.activate {
+  display: block;
+}  
+div.download_item[media-type="record"] .download_button_menu.activate {
+  display: none;
+}  
+div.download_item[data-state] .download_button_menu.activate {
+  display: none;
+}  
+
+div.download_item .download_button_menu_item {
+  color: #fff; 
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 100px;
+  max-width: 150px;
+  height: 24px;
+  border-bottom: 1px solid #ccc; 
+  text-align: center;
+  background-image: linear-gradient(#3d3d3d, #4d4d4d);
+}
+div.download_item .download_button_menu_item:hover {
+  background-image: linear-gradient(#d3d3d3, #d4d4d4);
+  color: #000;
+}  
+div.download_item .download_button_menu_item .text {
+  width: calc(100% - 36px);
+  vertical-align: middle;
+  padding: 5px 15px;
+}  
+div.download_item .download_button_menu_item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}  
+div.download_item .download_button_menu_item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 0;
+}  
+div.download_item div.download_quality {
+  width: 45px;
+  height: 40px;  
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 3px 4px 3px 0px;
+  font-family: arial, sans-serif;
+  font-size: 9px;
+  text-align: center;
+  float: left;
+}
+
+div.download_item .size[loading="1"]{
+  background: url( /images/popup/small_loading.gif ) no-repeat;
+  background-position: center center;
+  
+}
+div.download_item div.media_quality {
+  min-height: 8px;
+}  
+
+div.download_item[quality="Low"] div.media_quality {
+  color: #C80000;
+}
+
+div.download_item[quality="HD"] div.media_quality, div.download_item[quality="Full HD"] div.media_quality {
+  color: #008000;
+}
+
+div.download_item[quality="High"] div.media_quality, div.download_item[quality="SD"] div.media_quality {
+  color: #C88030;
+}
+
+
+div.download_item div.download_quality[empty="true"] {
+  display: none !important;
+}
+div.download_item div.download_title {
+  padding-left: 10px;
+  max-width: 310px;
+  height: 44px;
+  color: #000;
+}
+div.download_item div.download_url {
+  width: 100%;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Tahoma;
+  font-size: 12px;
+  vertical-align: bottom;
+  text-decoration: none;
+}
+div.download_item div.download_label {
+  width: 100%;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Tahoma;
+  font-size: 12px;
+  vertical-align: top;
+  text-decoration: none;
+}
+div.download_item:hover div.download_title{
+}
+
+div.download_item .buttonsSmall{
+  position: relative;
+  width: 24px;
+  height: 48px;
+  padding-left: 3px;
+  display: table-cell;
+  vertical-align: middle; 
+}
+
+div.download_item .copyLink{
+  cursor: pointer;
+  background-image: url('/images/popup/copy.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-top: 2px;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+div.download_item .removeLink{
+  cursor: pointer;
+  background-image: url('/images/popup/delete.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+div.download_item:hover .buttonsSmall .copyLink, div.download_item:hover .buttonsSmall .removeLink {
+  opacity: 1;
+}  
+
+div.download_item .info{
+  display: table;
+  padding-top: 2px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Tahoma;
+  font-size: 12px;
+  width: 540px;
+}
+
+.short-view .download_item .thumbnailContent {
+  display:none;
+}  
+.short-view .download_item .leftContent {
+    width: 405px;
+}
+.short-view .download_item .download_label {
+  display:none;
+}  
+.short-view .download_item .download_button_icon {
+  display:none;
+}  
+.short-view .download_item .download_button_text {
+    width: 86px;
+}
+/* -----------------------------------------------------------------  */
+.download_item.group-video  {
+  display: block; 
+  width: 540px;
+  min-height: 54px;
+  height: auto;
+}
+.download_item.group-video:hover {
+  background-color: #fff;
+}
+.download_item.group-video .download_item_wrapped  {
+  padding: 3px;
+  cursor: default;
+  width: 100%;
+  /*height: 100%;*/
+}
+.download_item.group-video .info {
+    display: block;
+    padding-top: 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Tahoma;
+    font-size: 12px;
+    width: 540px;
+    min-height: 54px;
+}
+.download_item.group-video .thumbnailContent {
+  position:relative;
+  width: 105px;
+  display: block;
+}
+.download_item.group-video .thumbnailContent .thumbnail_wrapped {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 62px;
+}
+.download_item.group-video .thumbnailContent .thumbnail {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    height: 62px;
+    overflow: hidden;
+}
+.download_item.group-video .thumbnailContent .thumbnail-active:hover {
+  width: 288px;
+  height: 175px;
+  overflow: visible;
+  background: white;
+  z-index: 10;
+}
+
+.download_item.group-video .titleContent{
+  position:relative;
+  display: block;
+  margin-left: 110px;
+  vertical-align: middle;
+  width: 400px;
+  height: 77px;
+}
+.download_item.group-video .group_download_title {
+  display: block;
+  padding-left: 10px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 400px;
+  /* height: 24px; */
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Tahoma;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.download_item.group-video .group_download_title .stream-video-name {
+  width:300px;
+	display: inline-block;
+}
+.download_item.group-video .group_download_title .stream-video {
+	display: block;
+	margin-left: 10px;
+	color: #999;
+}
+.download_item.group-video .group_download_count {
+  display: none;
+  position: absolute;
+  top: 37px;
+  left: 10px;
+  width: 200px;
+  min-height: 30px;
+  cursor: pointer;
+}
+.download_item.group-video .group_download_count .size {
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Tahoma;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.download_item.group-video .group_download_count .label {
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Tahoma;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+}  
+.download_item.group-video .group_download_content {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 100%;
+  min-height: 30px;
+}
+.download_item.group-video[state-hide] .group_download_content {
+  display: none;
+}  
+.download_item.group-video[state-hide] .group_download_block {
+  display: none;
+}  
+.download_item.group-video[state-hide] .group_download_count {
+  display: block;
+}  
+.download_item.group-video .group_download_content .download_group_item {
+  display: block;
+  width: 406px;
+  height: 30px;
+}
+.download_item.group-video .download_group_item:hover {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+.download_item.group-video .group_download_content .download_group_item .download_group_item_wrapped {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;    
+}
+.download_item.group-video .leftGroupIcon {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.download_item.group-video .leftGroupContent {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    display: block;
+    vertical-align: middle;
+    width: 175px;
+    height: 24px;
+}
+.download_item.group-video.show-format .leftGroupIcon {
+    display: block;
+}  
+.download_item.group-video.show-format .leftGroupContent {
+    left: 25px;
+}  
+.download_item.group-video .leftGroupContent > div{
+  display: block;
+  vertical-align: middle;
+}
+.download_item.group-video .leftGroupContent .label {
+    max-width: 200px; 
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Tahoma;
+    font-size: 12px;
+    vertical-align: top;
+    text-decoration: none;
+    float: left;
+}
+.download_item.group-video .group_download_block .label {
+	max-width: 300px;
+}
+.download_item.group-video .leftGroupContent .label .stream-video {
+	color: #999;
+}
+.download_item.group-video .buttonsGroupSmall {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 55px;
+  height: 24px;
+  padding-left: 3px;
+  display: block;
+  vertical-align: middle; 
+  margin-top: 3px;  
+}
+.download_item.group-video .buttonsGroupSmall .removeLink {
+    margin: 0; 
+    float: left;
+}
+.download_item.group-video .buttonsGroupSmall .copyLink {
+    margin: 0; 
+    float: right;
+}
+.download_item.group-video .download_group_item:hover .buttonsGroupSmall .copyLink, .download_item.group-video .download_group_item:hover .buttonsGroupSmall .removeLink {
+  opacity: 1;
+}
+.download_item.group-video .middleGroupContent {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 150px;
+  height: 24px;
+  display: block;
+  vertical-align: middle; 
+  margin-top: 3px;  
+  padding-top: 5px;
+}
+.download_item.group-video .middleGroupContent .size {
+    float: right;
+    margin-right: 10px;
+    font-size: 11px;
+    font-weight: normal;
+}
+.download_item.group-video .middleGroupContent .procent{
+    font-size: 11px;
+    float: right;
+}
+.download_item.group-video .download_group_item:hover .middleGroupContent {
+  opacity: 0;
+}
+.download_item.group-video .rightGroupContent {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  right: 0;  
+}
+.download_item.group-video .rightGroupContent .download_button_icon {
+    position: absolute;
+    top: 7px;
+    left: 4px; 
+}
+.download_item.group-video .rightGroupContent .download_button {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 5px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-image: -moz-linear-gradient(#427fed, #4da5d8);
+    background-image: -webkit-linear-gradient(#427fed, #4da5d8);
+    background-image: linear-gradient(#427fed, #4da5d8);
+}
+.download_item.group-video .download_group_item[data-state] .download_button {
+  background-image:-moz-linear-gradient(#8add6d, #60b044);
+  background-image:-webkit-linear-gradient(#8add6d, #60b044);
+  background-image:linear-gradient(#8add6d, #60b044);
+  border: 1px solid #5ca941;
+}  
+.download_item.group-video .download_group_item .download_button[disabled] {
+	opacity: 0.3;
+	cursor: default;
+}	
+.download_item.group-video .group_download_block .line {
+  max-width: calc( 100% - 30px);
+  background-color: #ccc;
+  margin: 5px;
+}
+.download_item.group-video .group_download_block .download_group_item {
+  display: block;
+  width: 520px;
+  height: 30px;
+}
+.download_item.group-video .group_download_block .download_group_item .download_group_item_wrapped {
+  display: block;
+  position: relative;
+  width: 516px;
+  height: 30px;
+  margin-bottom: 10px;    
+}
+.download_item.group-video.one-item .group_download_title {
+  cursor: default;
+  width: 300px;
+  top: 0;
+} 
+.download_item.group-video.one-item .group_download_content {
+  top: 40px;
+} 
+.download_item.group-video.one-item .rightGroupContent {
+}
+.download_item.group-video.one-item .rightGroupContent .download_button {
+  height: 30px;
+}  
+.download_item.group-video.one-item .rightGroupContent .download_button[disabled="true"] {
+  opacity: 0.5;
+}  
+
+/* ----------------------  header  ----------------------------- */
+.headerHint{
+  height: 5px;
+}
+.rateHint{
+  padding: 10px 10px 10px 2px;
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  background: #beef9d;
+}
+.rateHint:hover{
+}
+.rateHint .text{
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  margin-left: 0px; 
+  -webkit-transition-duration: 200ms;
+  padding: 0px 10px 0 34px;
+  display: inline-block;
+  color: #000;
+}
+.rateHint .close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background: url( /images/popup/close.png );
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.rateHint .header-rate {
+  color: #464646;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 3px 10px 6px 20px;
+}
+.rateHint .header-rate-text {
+  display: inline-block;
+  margin-right: 5px;
+}
+.rateHint .header-rate-img {
+  display: inline-block;
+  width: 45px;
+  height: 16px;
+  background: url( /images/popup/stars.png ) 0px 3px no-repeat;
+}
+
+/* ----------------------  footer  ----------------------------- */
+.footer {
+  width: 100%;
+  height: 32px;
+  position: fixed;
+  bottom: 0px;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  left: 0px;
+  right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;  
+  background: #f2f2f2;
+  border-top:3px solid #c7d1d2;
+}
+.footer .footer-item {
+  display: block;
+  color: #464646;
+  float: left;
+  margin-right: 4px;
+  padding: 8px 4px 6px 26px;
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  background-size: auto 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer .footer-item:hover {
+  background-color: #ddd;
+  color: #222;  
+}
+.footer .footer-rate {
+  display: block;
+  color: #464646;
+  float: left;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 3px 10px 6px 1px;
+}
+.footer .footer-rate .footer-rate-text {
+  display: inline-block;
+  margin-right: 5px;
+}
+.footer .footer-rate .footer-rate-img {
+  display: inline-block;
+  width: 45px;
+  height: 16px;
+  background: url( /images/popup/stars.png ) 0px 3px no-repeat;
+}
+.footer .footer-rate:hover {
+  background-color: #ddd;
+  color: #222;  
+}
+
+/* -------------------------------------------- */
+#containerMessage {
+	text-align: center;
+	font-family: verdana,helvetica,arial,sans-serif;
+	font-size: 13px;
+	line-height: 1.3;
+	width: calc(100% - 30px);
+    height: 380px;
+    position: relative;
+	padding: 10px;
+}
+#containerMessage .message-wrapped {
+
+}
+#containerMessage .message-wrapped span {
+
+}
+#containerMessage .message-disabled {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+}
+#containerMessage .message-disabled .message-disabled-wrapped {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#containerMessage .message-disabled .message-disabled-wrapped button {
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}	
+#containerMessage .message-disabled .message-button-closed {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+
+}
+#containerMessage .message-disabled .message-button-dont-show {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+#containerMessage .noYoutubefeaturebanner {
+	margin-top:10px;
+	height: 350px;
+}
+#containerMessage .message-wrapped.streams {
+	color: black;
+	text-align: left;
+}
+#containerMessage .message-wrapped.streams .title {
+	color: #474747;
+	text-align: center;
+	font-weight: bold;
+}
+#containerMessage .message-wrapped.streams .title {
+	color: #474747;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+#containerMessage .message-wrapped.streams .text {
+	text-align: left;
+	font-size: 13px;
+    line-height: 16px;
+	color: #000;
+	width: 100%;
+	height: 48px;
+}
+#containerMessage .message-wrapped.streams .image {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin: 20px 0 25px 0;
+}
+#containerMessage .message-wrapped.streams .button a {
+    text-decoration: none;
+}
+#containerMessage .message-wrapped.streams .button div {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #beef9d;
+    color: #464646;
+    width: 200px;
+	text-align: center;
+    margin: 0 auto;
+}
+#clipboardholder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+/* -----       snifferNotice          ------ */
+#snifferNotice {
+	text-align: center;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+.wrappedEmptyNotice {
+	width: 500px;
+	height: auto;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+.wrappedEmptyNotice .textEmptyNotice {
+  color: #464646;
+  font-size: 15px;
+  font-weight: 400;    
+	width: 100%;
+	height: 24px;
+	text-align: center;
+}

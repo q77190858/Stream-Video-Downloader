@@ -1,0 +1,48 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/icons/stream-on-32x32.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_extension_hint__"
+   },
+   "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": [ "/js/hooks/content.js" ],
+        "run_at": "document_end"
+      }
+   ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com https://www.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "Stream Video downloader that really works! Downloads most popular media formats, videos",
+   "icons": {
+      "128": "images/icons/stream-on-128x128.png",
+      "16": "images/icons/stream-on-16x16.png",
+      "24": "images/icons/stream-on-24x24.png",
+      "32": "images/icons/stream-on-32x32.png",
+      "48": "images/icons/stream-on-48x48.png",
+      "64": "images/icons/stream-on-64x64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtAJ5otybkUQcdFw2d4bSFOum5JDfRLi8/BdqM+csf44Aj5wuy6tsNzoSRZtqXy7F3AMfLfJDHAvcO36Jq1sPXargIzz2i8ekcixsTCFOOsjghQme1fI4IifCWofFSfbcCMqJK8XI9nbZqOB1F12EUSEw0lNx6pMZOKwfoSd06wQtUt9+fxk7ipC5kmiVM4Q1vSqBkwsjVRtRCGcD/n+MbAdvARtkoUztlFCo68JSvKDf++gNqbmWDrg5TWP2MgvXy9FBvJTUOwVLjtSi3H3oTTKUSHVP8fm59KBmaVso3pvTTA9pzF7ZG4J9mGn/MwkLBckJWwx2l7eCkDW2VcB68QIDAQAB",
+   "manifest_version": 2,
+   "name": "Stream Video Downloader",
+   "options_page": "opt_page.html",
+   "permissions": [ "tabs", 
+					"webRequest", 
+					"webNavigation", 
+					"http://*/*", 
+					"https://*/*", 
+					"cookies", 
+					"webRequestBlocking", 
+					"unlimitedStorage", 
+					"storage", 
+					"management", 
+					"downloads" 	  ],
+   "short_name": "Stream Video Downloader",
+   "version": "9.2.10",
+   "web_accessible_resources": [ "*" ]
+}

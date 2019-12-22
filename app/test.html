@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test FFMPEG</title>
+    <link rel="stylesheet" href="/css/test.css">
+	<script src="/js/app/test.js"></script>
+</head>
+<body class="test">
+	
+	<div id="test_load_file" class="layout-row"> 
+		<div class="edit-actions-ripple" >
+			<label>URL:</label>
+			<input  id="test_load_url" size="100" type="text">
+			<button  id="test_load_start" class="md-primary md-button md-ink-ripple" type="button" aria-label="Load">
+				<span>Load</span>
+			</button> 
+			<button  id="test_load_clear" class="md-primary md-button md-ink-ripple" type="button" aria-label="Clear">
+				<span>Clear</span>
+			</button> 
+		</div>
+		<div class="edit-actions-ripple" >
+			<label>FILE:</label>
+			<input type="file" id="test_upload_file"  />
+			<button  id="test_upload_start" class="md-primary md-button md-ink-ripple" type="button" aria-label="UpLoad">
+				<span>UpLoad</span>
+			</button> 
+		</div>
+	</div>	
+	
+	<div id="test_container_file" class="layout-row"> 
+
+	
+	</div>	
+
+	<div class="action-button"> 
+		<div id="test_file_name"></div>
+		<button  id="test_file_load" class="md-primary md-button md-ink-ripple" type="button" aria-label="Load" disabled="true">
+			<span>Load</span>
+		</button> 
+		<button  id="test_file_rename" class="md-primary md-button md-ink-ripple" type="button" aria-label="Rename" disabled="true">
+			<span>Rename</span>
+		</button> 
+		<button  id="test_file_delete" class="md-primary md-button md-ink-ripple" type="button" aria-label="Delete" disabled="true">
+			<span>Delete</span>
+		</button> 
+		<button  id="test_file_play" class="md-primary md-button md-ink-ripple" type="button" aria-label="Play" disabled="true">
+			<span>Play</span>
+		</button> 
+	</div>	
+	
+	<div id="test_ffmpeg" class="layout-row"> 
+		<div class="edit-actions-ripple" >
+			<input  id="test_ffmpeg_cmd" size="110" type="text">
+			<button  id="test_ffmpeg_run" class="md-primary md-button md-ink-ripple" type="button" aria-label="Run">
+				<span>Run</span>
+			</button> 
+		</div>
+	</div>	
+
+	<div id="test_ffmpeg_message" class="layout-row"> 
+		<video id="videoContainer" controls="" class="video-container" src=""></video>
+	</div>	
+	
+
+	
+</body>
+</html>
+

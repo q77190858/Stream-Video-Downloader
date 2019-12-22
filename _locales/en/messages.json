@@ -1,0 +1,157 @@
+{
+   "extension_description": {
+      "description": "Description of this extension",
+      "message": "Popular Video Downloader. Downloads most popular media formats, flash videos."
+   },
+   "extension_hint": {
+      "description": "Tooltip for main button",
+      "message": "Click to download media"
+   },
+   "extension_locale": {
+      "description": "For internal usage",
+      "message": "en"
+   },
+   "extension_title": {
+      "description": "Title of this extension",
+      "message": "Stream Video Downloader"
+   },
+   "noload_message_disabled": {
+      "message": "Download of YouTube video is disabled!"
+   },
+   "noload_message_probably": {
+      "message": "Probably you may consider better extension:"
+   },
+   "noyoutube_message": {
+      "message": "Due to Google Webstore Policy you're unable to download."
+   },
+   "options_facebook": {
+      "message": "Display facebook.com download button"
+   },
+   "options_filename": {
+      "message": "Download original FileName"
+   },
+   "options_show_formats": {
+      "message": "Show formats"
+   },
+   "options_trigger_video": {
+      "message": "Trigger if video more than"
+   },
+   "options_vk": {
+      "message": "Display vk.com download button"
+   },
+   "popup_cant_find_media": {
+      "message": "Can't find the media for download."
+   },
+   "popup_closed_message": {
+      "message": "Close"
+   },
+   "popup_disabled_message": {
+      "message": "Don't show it again."
+   },
+   "popup_donate_block_message1": {
+      "message": "Thank you for your interest in donating! Your donation will help ensure that we can continue to make great software, and keep as much of it free as possible. How’s it free if we’re asking you to donate? That’s the great part—if you can’t afford it or you’re not sure it’s worth it, you’re welcome to keep using our software free of charge."
+   },
+   "popup_donate_block_message2": {
+      "message": "Received donations will NOT be used to pay salaries or any indirect costs that is not directly related to keeping the service on the Internet."
+   },
+   "popup_download_button": {
+      "description": "Download button for multiple downloads",
+      "message": "Download"
+   },
+   "popup_founded_media": {
+      "description": "Title for founded media",
+      "message": "Founded media:"
+   },
+   "popup_get_download_url": {
+      "description": "Single download button title",
+      "message": "Download This Media"
+   },
+   "popup_help_converter": {
+      "description": "Title for video converter link",
+      "message": "Video Converter"
+   },
+   "popup_help_feedback": {
+      "description": "Title for feedback link",
+      "message": "Feedback"
+   },
+   "popup_help_help": {
+      "description": "Title for help link",
+      "message": "Help"
+   },
+   "popup_media_combine_message1": {
+      "message": "Note to this video!"
+   },
+   "popup_media_combine_message2": {
+      "message": "You need to wait until video completely preloads, then start to download."
+   },
+   "popup_media_combine_message3": {
+      "message": "Otherwise, you will download only pre-loaded part."
+   },
+   "popup_media_combine_title": {
+      "description": "Title for combine media",
+      "message": "Note! For this video you need to wait until it fully loads into your browser."
+   },
+   "popup_media_not_found": {
+      "description": "Title for pages without media",
+      "message": "Can't find the media for download."
+   },
+   "popup_media_private": {
+      "message": "This video is private and can't be downloaded."
+   },
+   "popup_noyoutube_message1": {
+      "message": "Due to YouTube Policy. It isn't allowed to download from YouTube."
+   },
+   "popup_noyoutube_message2": {
+      "message": "Please, do not post negative reviews. This is not our fault."
+   },
+   "popup_noyoutube_message3": {
+      "message": "Hope you understand that. Thanks!"
+   },
+   "popup_rate_button": {
+      "message": "Rate us!"
+   },
+   "popup_rate_message": {
+      "message": "If you like us, please rate our product."
+   },
+   "popup_root_media": {
+      "description": "Title for error of supported sites",
+      "message": "Download feature is not accessible from site root."
+   },
+   "popup_search_button": {
+      "description": "Search button title",
+      "message": "Search"
+   },
+   "popup_searching_media": {
+      "description": "Title for searching media",
+      "message": "Searching media for download..."
+   },
+   "popup_sniffer_notice": {
+      "message": "Nothing to download. Try to start playing video."
+   },
+   "popup_sovet_block": {
+      "message": "Smart Pause automatically pauses currently playing videos on YouTube once you leave the page and resumes playback when you return."
+   },
+   "popup_streams_button": {
+      "message": "Download Converter"
+   },
+   "popup_streams_message1": {
+      "message": "You need converter extension for Streams."
+   },
+   "popup_streams_message2": {
+      "message": "Sorry, but this is the only way how to make it work."
+   },
+   "popup_streams_message3": {
+      "message": "Streaming video will be downloaded in the folder in two files. Mostly this is audio and video. Our FREE converter will merge them into one file. That's pretty simple and won't take much time from you."
+   },
+   "popup_update_chrome_notice": {
+      "message": "Your version of Google Chrome™ is out of date. Please update it to work with Stream Video Downloader."
+   },
+   "vk_download_video": {
+      "description": "Download link for VK Video",
+      "message": "Download Video"
+   },
+   "vk_download_video_hd": {
+      "description": "Download link for VK Video HD",
+      "message": "Download HD"
+   }
+}

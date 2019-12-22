@@ -1,0 +1,220 @@
+<html>
+
+<head>
+
+	<script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/js/popup/namespace.js"></script>
+	<script type="text/javascript" src="/js/utils.js"></script>
+	<script type="text/javascript" src="/js/async.js"></script>
+
+	<script type="text/javascript" src="/js/background/Media.js"></script>
+	<script type="text/javascript" src="/js/background/Load.js"></script>
+	<script type="text/javascript" src="/js/background/MainButton.js"></script>
+	<script type="text/javascript" src="/js/Prefs.js"></script>
+	<script type="text/javascript" src="/js/popup/Popup.js"></script>
+	<script type="text/javascript" src="/js/popup/PopupHints.js"></script>
+	<script type="text/javascript" src="/js/popup/PopupDummy.js"></script>
+	<script type="text/javascript" src="/js/contentScripts/Controller.js"></script>
+	<script type="text/javascript" src="/js/locale.js"></script>
+	<script type="text/javascript" src="/js/ad.js"></script>
+
+	<script type="text/javascript" src="/js/contentScripts/Controller.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="js/internals/tools.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/js/_external/perfect-scrollbar.css" />
+	<script type="text/javascript" src="/js/_external/perfect-scrollbar.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/popup.css" />
+	<link rel="stylesheet" type="text/css" href="css/popupdummy.css" />
+</head>
+
+<body>
+	<div id="alert"></div>
+	<div id="download_block">
+
+		<div id="header_container" class="rateHint">
+		</div>
+
+		<div class="bgLine"></div>
+
+		<div id="updateChromeNotice" hidden="true">
+			<span msg="popup_update_chrome_notice"></span><br />
+			<img src="/images/update_chrome.png" />
+		</div>
+		<div id="FvdSuggestionMessage" hidden="true">
+			<div class="text" msg="popup_rate_message"></div>
+			<img src="/images/star.png" class="rate_star" />
+			<img src="/images/star.png" class="rate_star" />
+			<img src="/images/star.png" class="rate_star" />
+			<img src="/images/star.png" class="rate_star" />
+			<img src="/images/star.png" class="rate_star" />
+			<a class="button"><span class="text" msg="popup_rate_button"></span></a>
+		</div>
+
+		<div id="multiple_download_block">
+			<div class="multiple_download_container">
+				<div class="multiple_download_header">
+					<h2 id="multiple_download_block_title">Found media:</h2>
+					<div class="iconDiv">
+						<a id="help_link_help" class="iconButton" title="Quick Start Guide" href="https://www.stream-video-downloader.com/quick-guide/"
+						 target="_blank"></a>
+						<!-- <a id="help_link_feedback" class="iconButton" target="_blank" title="Errors? Contact us!"></a> -->
+						<a id="help_link_options" class="iconButtonOptions" title="Options!"></a>
+						<a id="help_link_clear" class="iconButtonClear" title="Clear List"></a>
+					</div>
+				</div>
+
+				<div id="containerMessage" hidden="true">
+				</div>
+
+				<div id="download_container_wrapped">
+					<div id="download_item_container"></div>
+				</div>
+
+				<!--                            template group                         -->
+
+				<div class="download_group_item" id="download_template_group_item">
+					<div class="download_group_item_wrapped">
+
+						<div class="leftGroupIcon">
+							<div class="media_format"><img /></div>
+						</div>
+
+						<div class="leftGroupContent">
+							<div class="label"></div>
+						</div>
+
+						<div class="rightGroupContent">
+							<div class="download_button">
+								<div class="download_button_icon"></div>
+								<div class="download_button_text">
+									<div class="download_button_wrapped middle">
+										<div class="text">Download</div>
+									</div>
+									<div class="loading"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="middleGroupContent">
+							<div class="procent"></div>
+							<div class="size"></div>
+						</div>
+
+						<div class="buttonsGroupSmall">
+							<div class="removeLink" title="Remove from list"></div>
+							<div class="copyLink" title="Copy to Clipboard"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="download_item group-video" id="download_template_group">
+					<div class="download_item_wrapped">
+						<div class="info">
+
+							<div class="thumbnailContent">
+								<div class="thumbnail_wrapped"></div>
+								<div class="thumbnail"></div>
+							</div>
+
+							<div class="titleContent">
+								<div class="group_download_title"></div>
+								<div class="group_download_count">
+									<span class="count"></span>
+									<span class="label">downloads available</span>
+								</div>
+								<div class="group_download_content"></div>
+							</div>
+						</div>
+						<div class="group_download_block"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+				<!--                         /   template group                         -->
+
+
+			</div>
+
+
+
+			<div id="sovet_block" hidden="true">
+				<div class="sovet_block_icons">
+					<img src="/images/smart_pause.png" class="banner_smart_pause" />
+				</div>
+				<div class="sovet_block_text">
+					<div class="text">
+						<span msg="popup_sovet_block"></span>
+					</div>
+				</div>
+				<div class="close" id="sovet_block_close" title="Don't show it again">x</div>
+			</div>
+
+			<div id="empty_download_block" hidden="true">
+				<h2 id="empty_download_block_title" msg="popup_cant_find_media"></h2>
+			</div>
+
+			<div id="snifferNotice" hidden="true">
+				
+
+				<div class="dummy_item" id="dummy_container">
+					<div class="white-nothing wrappedEmptyNotice">
+						<div class="white-nothing-download textEmptyNotice" id="notice_container_text"></div>
+					</div>
+					<!-- <div class="white_area" id="dummy_container_girl">
+						<div class="girl"></div>
+						<br clear="all">
+						<div class="dummy-close" id="dummy_close"></div>
+
+						<div class="dummy-content">
+							<div class="dummy-wrapped">
+								<div class="show-container">
+									<div class="banner" id="dummy_banner">
+
+										<div id="awn-z2060351"></div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+
+
+			</div>
+
+			<div id="combineNotice" hidden="true">
+				<span msg="popup_media_combine_message1"></span><br />
+				<span msg="popup_media_combine_message2"></span><br />
+				<span msg="popup_media_combine_message3"></span><br />
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="donate_block" style="display: none;">
+		<span msg="popup_donate_block_message1"></span><br /><br />
+		<span msg="popup_donate_block_message2"></span><br />
+		<div id="donateButtonContainer">
+			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QNZY5B2VPLQKA" target="_blank"><img
+				 src="/images/paypal_donate.png" /></a>
+			<a href="#" id="returnToThreads">Return to threads</a>
+		</div>
+	</div>
+
+	<div id="help_padding_block"></div>
+	<div id="help_block">
+		<div class="bgLine"></div>
+
+		<div id="footer_container" class="footer"></div>
+
+	</div>
+
+	<input type="text" id="clipboardholder" />
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Record Live</title>
+    <link rel="stylesheet" href="/css/record.css">
+	<script src="/js/utils.js"></script>
+	<script src="/js/utf8.js"></script>
+	<script src="/js/async.js"></script>
+	<script src="/js/_external/jspack.js"></script>
+	<script src="/modules/files.js"></script>
+	<script src="/modules/bootstrap.js"></script>
+	<script src="/modules/ffmpeg.js"></script>
+	<script type="text/javascript" src="/js/app/record.js"></script>
+</head>
+
+<body>
+	<div class="app">
+		<div class="view">
+			<div class="view-content">
+			
+				<div class="banner">
+					<div class="iconWrapper"></div>
+					<div class="headerWrapper">Record Live stream</div>
+					<div class="titleWrapper">ABC-Remote on Vimeo</div>
+					<div class="labelWrapper">[800x600]</div>
+				</div>
+				
+				<div class="streams">
+					<div class="stream-item video" id="video_stream">	
+						<div class="legend">Video:</div>
+						<div  class="size">0</div>
+					</div>	
+				</div>	
+
+				<div class="status" id="rezult_status">
+					<div class="legend">Saving:</div>
+					<div class="progress">0%</div>
+					<div  class="size">0</div>
+					<div  class="state"></div>
+				</div>	
+				
+				<div class="actions" id="action_streams">
+					<button type="button" id="button_stream_close"><span>Close Tab</span></button>
+					<button type="button" id="button_stream_cancel"><span>Stop</span></button>
+				</div>
+				
+				
+			</div>		
+		</div>		
+	</div>		
+</body>
+</html>
+

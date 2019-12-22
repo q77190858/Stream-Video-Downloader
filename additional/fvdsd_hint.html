@@ -1,0 +1,112 @@
+<html>
+
+<head>
+
+<style>
+
+	#mainDiv{
+		border: 4px solid #eee;
+		border-radius: 10px;
+		width: 260;
+		height: 150px;
+		background: -webkit-linear-gradient( 45deg, rgba(0,0,0,0.7), rgba(100,100,100,0.9) );
+		color: #fff;
+		font-family: sans-serif;
+		padding: 10px;
+		position:relative;
+	}
+	
+	#mainDiv:hover{
+
+	}
+	
+	#mainDiv .title{
+		font-size: 18px;
+	}
+
+	#mainDiv .clickable{
+		text-align: center;
+		cursor: pointer;
+	}
+	
+	#mainDiv .head{
+		background: url( /images/fvdsd.png );
+		background-repeat: no-repeat;
+		padding-left: 38px;
+		display: inline-block;
+		text-align: left;
+	}
+	
+	#mainDiv .desc{
+		font-size: 12px;
+	}
+	
+	#mainDiv .desc.bottom{
+		margin-top: 10px;
+		text-shadow: 1px 1px 1px #000;
+		font-size: 11px;
+	}
+
+	#mainDiv .stars{
+		margin-top: 15px;
+		background: url( /images/stars.png );
+		width: 89px;
+		height: 16px;
+		display: inline-block;
+	}
+	
+	#mainDiv .dontdisplay{
+		position: absolute;
+		bottom: 5px;
+		font-size: 12px;
+		text-align: center;
+		width: 250px;
+	}
+	
+	
+	
+</style>
+
+<script>
+
+
+function setDisplayState( value ){
+	
+	localStorage["dont_display_fvdsd_hint"] = value;
+	
+}
+
+function toChromeMarket(){
+	window.open("https://chrome.google.com/webstore/detail/llaficoajjainaijghjlofdfmbjpebpa");
+}
+
+</script>
+
+</head>
+
+<body>
+
+	<div id="mainDiv">
+	
+		<div class="clickable" onclick="toChromeMarket()" title="Chrome Webstore">
+			
+			<div class="head">
+				<div class="title">FVD Speed Dial</div>
+				<div class="desc">Organize your bookmarks!</div>
+			</div>
+			
+			<div class="stars"></div>
+			
+			<div class="desc bottom">
+				Transparency, Backup/Restore, Custom Backgrounds, Recently Closed, Groups and much more!
+			</div>
+			
+		</div>
+		
+		<div class="dontdisplay"><label><input type="checkbox" onclick="setDisplayState(this.checked)">Dont display this message again</label></div>		
+	
+	</div>
+
+</body>
+
+</html>
